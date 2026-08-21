@@ -1,0 +1,79 @@
+schema_version: 1
+program:
+  id: clear-skin-weekly
+  name: Clear Skin Rhythm
+  description: Routine carried over from the Health project discussion.
+  start_date: 2026-08-17
+  timezone: Asia/Almaty
+  disclaimer: Follow your clinician's instructions. Stop and seek advice if irritation occurs.
+
+schedule:
+  - period: morning
+    label: Morning reset
+    time: "08:00"
+    days: [daily]
+    steps:
+      - id: cleanse-am
+        name: Medi-Peel Cleanser
+        instruction: Gently cleanse and pat dry
+        kind: cleanser
+      - id: serum-am
+        name: Anua Niacinamide 10% + TXA 4%
+        instruction: Apply a thin, even layer
+        kind: treatment
+      - id: spf-am
+        name: SKIN1004 SPF50+ Serum
+        instruction: Apply generously as the final morning step
+        kind: protection
+
+  - period: evening
+    label: Retinol night
+    time: "21:30"
+    days: [mon, thu, sun]
+    steps:
+      - id: cleanse-pm
+        name: Medi-Peel Cleanser
+        instruction: Gently cleanse and fully dry skin
+        kind: cleanser
+      - id: retinol
+        name: Retinol 1%
+        instruction: Use only as previously agreed with your clinician or care plan
+        kind: active
+
+  - period: evening
+    label: BHA night
+    time: "21:30"
+    days: [tue, fri]
+    steps:
+      - id: cleanse-pm
+        name: Medi-Peel Cleanser
+        instruction: Gently cleanse and pat dry
+        kind: cleanser
+      - id: bha
+        name: Salicylic Acid 2%
+        instruction: Apply a thin layer; do not combine with retinol that night
+        kind: active
+
+  - period: evening
+    label: Recovery night
+    time: "21:30"
+    days: [wed, sat]
+    steps:
+      - id: cleanse-pm
+        name: Medi-Peel Cleanser
+        instruction: Gently cleanse and pat dry
+        kind: cleanser
+      - id: recovery
+        name: Recovery / moisturize
+        instruction: No strong actives tonight
+        kind: recovery
+
+reminders:
+  - id: morning-routine
+    title: Morning skin routine
+    time: "08:00"
+    days: [daily]
+  - id: evening-routine
+    title: Evening skin routine
+    time: "21:30"
+    days: [daily]
