@@ -2,6 +2,12 @@
 
 A local-first Vue PWA for following skincare treatment programs as a daily checklist and weekly calendar.
 
+## Open the app
+
+### [Open FaceTrack PWA →](https://tjunussov.github.io/health-skincare/)
+
+On iPhone, open the link in Safari, then choose **Share → Add to Home Screen** to install it like an app.
+
 ## Run locally with Docker
 
 ```bash
